@@ -1,1 +1,15 @@
-V+(vŠk¡Û­¡ºÏj¶‡¢Êbµ¨¬n¶ëBçyÇ¬²+Zšg¥†Šè®§‹6«z«Š¸§~Šæië!¢Êbµ©Z­ëyÇ¬²+Zš·š–,Ú­¨²Ú²Úî¶êÚ•Ú,zçÚè™Øœ¡ºÛ¬äˆAÒŠË^™§^ë-¢,¦+Z•ªÛ­ºî™¤¨~Ü­è§µêç¡× zËh†‹)ŠÖ¥j¶ën´.x÷«š+^v+Ş®Æ¬~éÜŠ‰Ú–'Zuë'¢«±êŞ}êŞj–œ‰éízÉ‰Ê,•è­¢Ç(Ë¥µ«¦ºyØ¦z{h±ºÛ¬8Ÿz·§µçhi!‡‡-¢³Ÿ~'n¶ë6‹,¢šèvëh1ªÜiÊ'²émjÇ©®‡v)Ú,™©íš–œ‰éízË•«&v'(±©hq©^ŠÚ,yÊ'²ém®*,n
+## ğŸ”– VisÃ£o do produto
+<br>
+**Para** Hospitais<br> 
+<br> 
+**Que** Necessitam melhor organizar e gerir informaÃ§Ãµes hospitalares, Necessitam realizar a gestÃ£o estrutural do seu centro mÃ©dico<br> 
+<br> 
+**O** SIGEH - Sistema de gestÃ£o hospitalar<br> 
+<br>
+**Ã‰ um(a)** Software interno de gestÃ£o hospitalar<br> 
+<br> 
+**Que** Permite diversas funcionalidades no que se refere a pacientes, mÃ©dicos, leitos, consultas e procedimentos<br> 
+<br> 
+**Diferente do(a)** SGH, DoctorOffice<br> 
+<br> 
+**Nosso produto** Marca consultas e procedimentos; mantÃ©m pacientes, salas, mÃ©dicos; aloca leitos e consultÃ³rios<br> 
