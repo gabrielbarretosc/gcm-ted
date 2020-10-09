@@ -1,17 +1,17 @@
 ## 🔖 Visão do produto
 <br>
-**Para** Hospitais<br> 
+__Para__ Hospitais<br> 
 <br> 
-**Que** Necessitam melhor organizar e gerir informações hospitalares, Necessitam realizar a gestão estrutural do seu centro médico<br> 
+__Que__ Necessitam melhor organizar e gerir informações hospitalares, Necessitam realizar a gestão estrutural do seu centro médico<br> 
 <br> 
-**O** SIGEH - Sistema de gestão hospitalar<br> 
+__O__ SIGEH - Sistema de gestão hospitalar<br> 
 <br>
-**É um(a)** Software interno de gestão hospitalar<br> 
+__É um(a)__ Software interno de gestão hospitalar<br> 
 <br> 
-**Que** Permite diversas funcionalidades no que se refere a pacientes, médicos, leitos, consultas e procedimentos<br> 
+__Que__ Permite diversas funcionalidades no que se refere a pacientes, médicos, leitos, consultas e procedimentos<br> 
 <br> 
-**Diferente do(a)** SGH, DoctorOffice<br> 
+__Diferente do(a)__ SGH, DoctorOffice<br> 
 <br> 
-**Nosso produto** Marca consultas e procedimentos; mantém pacientes, salas, médicos; aloca leitos e consultórios<br> 
+__Nosso produto__ Marca consultas e procedimentos; mantém pacientes, salas, médicos; aloca leitos e consultórios<br> 
  
 
