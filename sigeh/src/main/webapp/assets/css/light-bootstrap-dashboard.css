@@ -677,13 +677,13 @@ body>.navbar-collapse[data-color="red"]:after {
 
 .sidebar[data-color="purple"]:after,
 body>.navbar-collapse[data-color="purple"]:after {
-    background: #9368E9;
-    background: -moz-linear-gradient(top, #9368E9 0%, #943bea 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9368E9), color-stop(100%, #943bea));
-    background: -webkit-linear-gradient(top, #9368E9 0%, #943bea 100%);
-    background: -o-linear-gradient(top, #9368E9 0%, #943bea 100%);
-    background: -ms-linear-gradient(top, #9368E9 0%, #943bea 100%);
-    background: linear-gradient(to bottom, #9368E9 0%, #943bea 100%);
+    background: #40E0D0;
+    background: -moz-linear-gradient(top, #40E0D0 0%, #3F888F 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #40E0D0), color-stop(100%, #3F888F));
+    background: -webkit-linear-gradient(top, #40E0D0 0%, #3F888F 100%);
+    background: -o-linear-gradient(top, #40E0D0 0%, #3F888F 100%);
+    background: -ms-linear-gradient(top, #40E0D0 0%, #3F888F 100%);
+    background: linear-gradient(to bottom, #40E0D0 0%, #3F888F 100%);
     background-size: 150% 150%;
 }
 
@@ -4967,6 +4967,10 @@ License - nucleoapp.com/license/
 
 .nc-bag::before {
     content: "\ea0f";
+}
+
+.nc-bandaid:before {
+	content: "\e6ad";
 }
 
 .nc-bank::before {

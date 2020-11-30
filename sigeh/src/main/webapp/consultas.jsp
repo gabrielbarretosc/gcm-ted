@@ -1,4 +1,4 @@
-<!-- 
+<!--
 =========================================================
  Light Bootstrap Dashboard - v2.0.1
 =========================================================
@@ -13,7 +13,6 @@
 
  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  -->
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -22,7 +21,8 @@
 	href="assets/img/apple-icon.png">
 <link rel="icon" type="image/png" href="assets/img/favicon.ico">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title>SIGEH</title>
+<title>Light Bootstrap Dashboard - Free Bootstrap 4 Admin
+	Dashboard by Creative Tim</title>
 <meta
 	content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
 	name='viewport' />
@@ -43,7 +43,7 @@
 
 <body>
 	<div class="wrapper">
-		<div class="sidebar" data-image="assets/img/sidebar-6.jpg">
+		<div class="sidebar" data-image="assets/img/sidebar-5.jpg">
 			<!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
@@ -51,7 +51,8 @@
     -->
 			<div class="sidebar-wrapper">
 				<div class="logo">
-					<a href="index.jsp" class="simple-text"> SIGEH </a>
+					<a href="index.jsp" class="simple-text">
+						SIGEH </a>
 				</div>
 				<ul class="nav">
 					<li><a class="nav-link" href="consultas.jsp"> <i
@@ -77,6 +78,7 @@
 			<!-- Navbar -->
 			<nav class="navbar navbar-expand-lg " color-on-scroll="500">
 				<div class="container-fluid">
+					<a class="navbar-brand" href="#pablo"> Table List </a>
 					<button href="" class="navbar-toggler navbar-toggler-right"
 						type="button" data-toggle="collapse"
 						aria-controls="navigation-index" aria-expanded="false"
@@ -88,20 +90,45 @@
 					<div class="collapse navbar-collapse justify-content-end"
 						id="navigation">
 						<ul class="nav navbar-nav mr-auto">
-
-						</ul>
-						<ul class="navbar-nav ml-auto">
+							<li class="nav-item"><a href="#" class="nav-link"
+								data-toggle="dropdown"> <i class="nc-icon nc-palette"></i> <span
+									class="d-lg-none">Dashboard</span>
+							</a></li>
 							<li class="dropdown nav-item"><a href="#"
 								class="dropdown-toggle nav-link" data-toggle="dropdown"> <i
-									class="nc-icon nc-bell-55"></i> <span class="notification">5</span>
+									class="nc-icon nc-planet"></i> <span class="notification">5</span>
 									<span class="d-lg-none">Notification</span>
-							</a> <!-- <ul class="dropdown-menu">
+							</a>
+								<ul class="dropdown-menu">
 									<a class="dropdown-item" href="#">Notification 1</a>
 									<a class="dropdown-item" href="#">Notification 2</a>
 									<a class="dropdown-item" href="#">Notification 3</a>
 									<a class="dropdown-item" href="#">Notification 4</a>
 									<a class="dropdown-item" href="#">Another notification</a>
-								</ul> --></li>
+								</ul></li>
+							<li class="nav-item"><a href="#" class="nav-link"> <i
+									class="nc-icon nc-zoom-split"></i> <span class="d-lg-block">&nbsp;Search</span>
+							</a></li>
+						</ul>
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item"><a class="nav-link" href="#pablo">
+									<span class="no-icon">Account</span>
+							</a></li>
+							<li class="nav-item dropdown"><a
+								class="nav-link dropdown-toggle" href="http://example.com"
+								id="navbarDropdownMenuLink" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false"> <span
+									class="no-icon">Dropdown</span>
+							</a>
+								<div class="dropdown-menu"
+									aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" href="#">Action</a> <a
+										class="dropdown-item" href="#">Another action</a> <a
+										class="dropdown-item" href="#">Something</a> <a
+										class="dropdown-item" href="#">Something else here</a>
+									<div class="divider"></div>
+									<a class="dropdown-item" href="#">Separated link</a>
+								</div></li>
 							<li class="nav-item"><a class="nav-link" href="#pablo">
 									<span class="no-icon">Log out</span>
 							</a></li>
@@ -114,34 +141,128 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="card">
-								<div class="card-body all-icons">
-									<div class="row">
-											<div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-6">
-												<a href="consultas.jsp" class="font-icon-detail">
-													<i class="nc-icon pe-7s-id"></i>
-													<p>Consultas</p>
-												</a>
-											</div>
-										<div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-6">
-											<div class="font-icon-detail">
-												<i class="nc-icon pe-7s-bandaid"></i>
-												<p>Procedimento</p>
-											</div>
-										</div>
-										<div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-6">
-											<div class="font-icon-detail">
-												<i class="nc-icon  nc-money-coins"></i>
-												<p>Financeiro</p>
-											</div>
-										</div>
-										<div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-6">
-											<div class="font-icon-detail">
-												<i class="nc-icon nc-circle-09"></i>
-												<p>Perfil Usuario</p>
-											</div>
-										</div>
-									</div>
+							<div class="card strpied-tabled-with-hover">
+								<div class="card-header ">
+									<h4 class="card-title">Striped Table with Hover</h4>
+									<p class="card-category">Here is a subtitle for this table</p>
+								</div>
+								<div class="card-body table-full-width table-responsive">
+									<table class="table table-hover table-striped">
+										<thead>
+											<th>ID</th>
+											<th>Name</th>
+											<th>Salary</th>
+											<th>Country</th>
+											<th>City</th>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Dakota Rice</td>
+												<td>$36,738</td>
+												<td>Niger</td>
+												<td>Oud-Turnhout</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Minerva Hooper</td>
+												<td>$23,789</td>
+												<td>Curaçao</td>
+												<td>Sinaai-Waas</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Sage Rodriguez</td>
+												<td>$56,142</td>
+												<td>Netherlands</td>
+												<td>Baileux</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>Philip Chaney</td>
+												<td>$38,735</td>
+												<td>Korea, South</td>
+												<td>Overland Park</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>Doris Greene</td>
+												<td>$63,542</td>
+												<td>Malawi</td>
+												<td>Feldkirchen in Kärnten</td>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td>Mason Porter</td>
+												<td>$78,615</td>
+												<td>Chile</td>
+												<td>Gloucester</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="card card-plain table-plain-bg">
+								<div class="card-header ">
+									<h4 class="card-title">Table on Plain Background</h4>
+									<p class="card-category">Here is a subtitle for this table</p>
+								</div>
+								<div class="card-body table-full-width table-responsive">
+									<table class="table table-hover">
+										<thead>
+											<th>ID</th>
+											<th>Name</th>
+											<th>Salary</th>
+											<th>Country</th>
+											<th>City</th>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Dakota Rice</td>
+												<td>$36,738</td>
+												<td>Niger</td>
+												<td>Oud-Turnhout</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Minerva Hooper</td>
+												<td>$23,789</td>
+												<td>Curaçao</td>
+												<td>Sinaai-Waas</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Sage Rodriguez</td>
+												<td>$56,142</td>
+												<td>Netherlands</td>
+												<td>Baileux</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>Philip Chaney</td>
+												<td>$38,735</td>
+												<td>Korea, South</td>
+												<td>Overland Park</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>Doris Greene</td>
+												<td>$63,542</td>
+												<td>Malawi</td>
+												<td>Feldkirchen in Kärnten</td>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td>Mason Porter</td>
+												<td>$78,615</td>
+												<td>Chile</td>
+												<td>Gloucester</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
@@ -158,12 +279,12 @@
 							<li><a href="#"> Blog </a></li>
 						</ul>
 						<p class="copyright text-center">
-							�
+							©
 							<script>
 								document.write(new Date().getFullYear())
 							</script>
-							<a href="index.jsp">Creative Tim</a>, made with love for a better
-							web
+							<a href="index.jsp">Creative Tim</a>, made with
+							love for a better web
 						</p>
 					</nav>
 				</div>
@@ -206,12 +327,12 @@
 
             <li class="active">
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-1.jpg" alt="" />
+                    <img src="assets/img/sidebar-1.jpg" alt="" />
                 </a>
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-3.jpg" alt="" />
+                    <img src="assets/img/sidebar-3.jpg" alt="" />
                 </a>
             </li>
             <li>
@@ -221,7 +342,7 @@
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-5.jpg" alt="" />
+                    <img src="assets/img/sidebar-5.jpg" alt="" />
                 </a>
             </li>
 
@@ -242,8 +363,8 @@
             <li class="header-title" id="sharrreTitle">Thank you for sharing!</li>
 
             <li class="button-container">
-				<button id="twitter" class="btn btn-social btn-outline btn-twitter btn-round sharrre"><i class="fa fa-twitter"></i> � 256</button>
-                <button id="facebook" class="btn btn-social btn-outline btn-facebook btn-round sharrre"><i class="fa fa-facebook-square"></i> � 426</button>
+				<button id="twitter" class="btn btn-social btn-outline btn-twitter btn-round sharrre"><i class="fa fa-twitter"></i> · 256</button>
+                <button id="facebook" class="btn btn-social btn-outline btn-facebook btn-round sharrre"><i class="fa fa-facebook-square"></i> · 426</button>
             </li>
         </ul>
     </div>
@@ -251,7 +372,8 @@
  -->
 </body>
 <!--   Core JS Files   -->
-<script src="assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="assets/js/core/jquery.3.2.1.min.js"
+	type="text/javascript"></script>
 <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
 <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
@@ -268,14 +390,5 @@
 	type="text/javascript"></script>
 <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
 <script src="assets/js/demo.js"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-		// Javascript method's body can be found in assets/js/demos.js
-		demo.initDashboardPageCharts();
-
-		demo.showNotification();
-
-	});
-</script>
 
 </html>

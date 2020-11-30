@@ -372,6 +372,12 @@
     align-items: center;
 }
 
+.font-icon-detail {
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .all-icons .font-icon-detail {
     text-align: center;
     padding: 45px 0px 30px;
