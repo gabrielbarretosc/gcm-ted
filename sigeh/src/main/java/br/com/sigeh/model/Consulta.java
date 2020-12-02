@@ -2,17 +2,27 @@ package br.com.sigeh.model;
 
 import java.util.List;
 
-public class Consulta extends Documento{
+public class Consulta extends Documento {
 
 	private String receita;
 	private String obs;
 	private List<String> medicamentos;
-	
-	public Consulta(String receita, String obs, List<String> medicamentos) {
+	private Salas sala;
+
+	public Salas getSala() {
+		return sala;
+	}
+
+	public void setSala(Salas sala) {
+		this.sala = sala;
+	}
+
+	public Consulta(String receita, String obs, List<String> medicamentos, Salas sala) {
 		super();
 		this.receita = receita;
 		this.obs = obs;
 		this.medicamentos = medicamentos;
+		this.sala = sala;
 	}
 
 	public Consulta() {
@@ -42,8 +52,5 @@ public class Consulta extends Documento{
 	public void setMedicamentos(List<String> medicamentos) {
 		this.medicamentos = medicamentos;
 	}
-	
-	
-	
-}
 
+}

@@ -13,6 +13,10 @@
 
  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  -->
 <!DOCTYPE html>
+<%@page import="java.util.*"%>
+<%@page import="br.com.sigeh.model.*"%>
+<%@page import="br.com.sigeh.enums.*"%>
+<%@page import= "java.text.SimpleDateFormat"%>
 <html lang="en">
 
 <head>
@@ -39,6 +43,91 @@
 <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
 <!-- CSS Just for demo purpose, don't include it in your project -->
 <link href="assets/css/demo.css" rel="stylesheet" />
+<%
+	Consulta consulta = new Consulta();
+	consulta.setId(1);
+        SimpleDateFormat fd = new SimpleDateFormat("dd-MM-yyyy");
+		consulta.setData(new Date());
+		Paciente paciente = new Paciente(TipoSanguineo.O);
+		paciente.setCidade("Salvador");
+		paciente.setCpf("012.012.687-01");
+		paciente.setEmail("usuarioTeste@sigeh.com.br");
+		paciente.setEstado("Bahia");
+		paciente.setNome("Mario caju");
+		consulta.setPaciente(paciente);
+		Profissional prof = new Profissional(Cargo.MEDICO, 8000);
+		prof.setNome("Dr. Penny");
+	consulta.setProfissional(prof);
+	consulta.setSala(new Salas(103, "Sala de Consulta", "ok"));
+		
+		Consulta consulta1 = new Consulta();
+		consulta1.setId(2);
+		consulta1.setData(new Date());
+			Paciente paciente1 = new Paciente(TipoSanguineo.O);
+			paciente1.setCidade("Salvador");
+			paciente1.setCpf("012.012.687-01");
+			paciente1.setEmail("usuarioTeste@sigeh.com.br");
+			paciente1.setEstado("Bahia");
+			paciente1.setNome("JosÈ Castanha");
+			consulta1.setPaciente(paciente1);
+			Profissional prof1 = new Profissional(Cargo.MEDICO, 8000);
+			prof1.setNome("Dr. House");
+			consulta1.setProfissional(prof1);
+			consulta1.setSala(new Salas(103, "Sala de Consulta", "ok"));
+			
+			Consulta consulta2 = new Consulta();
+			consulta2.setId(3);
+			consulta2.setData(new Date());
+				Paciente paciente2 = new Paciente(TipoSanguineo.O);
+				paciente2.setCidade("S„o Paulo");
+				paciente2.setCpf("012.012.687-01");
+				paciente2.setEmail("usuarioTeste@sigeh.com.br");
+				paciente2.setEstado("S„o Paulo");
+				paciente2.setNome("Maria Melancia");
+				consulta2.setPaciente(paciente2);
+				Profissional prof2= new Profissional(Cargo.MEDICO, 8000);
+				prof2.setNome("Dr. Alex Kid");
+				consulta2.setProfissional(prof2);
+				consulta2.setSala(new Salas(103, "Sala de Emergencia", "ok"));
+				
+				Consulta consulta3 = new Consulta();
+				consulta3.setId(4);
+				consulta3.setData(new Date());
+					Paciente paciente3 = new Paciente(TipoSanguineo.O);
+					paciente3.setCidade("Salvador");
+					paciente3.setCpf("012.012.687-01");
+					paciente3.setEmail("usuarioTeste@sigeh.com.br");
+					paciente3.setEstado("Bahia");
+					paciente3.setNome("Wescley Urubu");
+					consulta3.setPaciente(paciente3);
+					Profissional prof3 = new Profissional(Cargo.MEDICO, 8000);
+						prof3.setNome("Dr. Drauzio");
+						consulta3.setProfissional(prof3);
+						consulta3.setSala(new Salas(103, "Sala de Consulta", "ok"));
+					
+					Consulta consulta4 = new Consulta();
+					consulta4.setId(5);
+					consulta4.setData(new Date());
+						Paciente paciente4 = new Paciente(TipoSanguineo.O);
+						paciente4.setCidade("S„o Paulo");
+						paciente4.setCpf("012.012.687-01");
+						paciente4.setEmail("usuarioTeste@sigeh.com.br");
+						paciente4.setEstado("S„o Paulo");
+						paciente4.setNome("Ronaldo Penta");
+						consulta4.setPaciente(paciente4);
+						Profissional prof4 = new Profissional(Cargo.MEDICO, 8000);
+							prof4.setNome("Dr. Murphy");
+							consulta4.setProfissional(prof4);
+						consulta4.setSala(new Salas(103, "Sala de Raio-X", "ok"));
+						List<Consulta> listaConsulta = new ArrayList<Consulta>();
+						listaConsulta.add(consulta);
+						listaConsulta.add(consulta1);
+						listaConsulta.add(consulta2);
+						listaConsulta.add(consulta3);
+						listaConsulta.add(consulta4);
+						
+						request.setAttribute("listaConsulta", listaConsulta);
+		%>
 </head>
 
 <body>
@@ -143,61 +232,28 @@
 						<div class="col-md-12">
 							<div class="card strpied-tabled-with-hover">
 								<div class="card-header ">
-									<h4 class="card-title">Striped Table with Hover</h4>
-									<p class="card-category">Here is a subtitle for this table</p>
+									<h4 class="card-title">Consultas em Destaque</h4>
+									<p class="card-category">Consultas nos ultimos 3 dias</p>
 								</div>
 								<div class="card-body table-full-width table-responsive">
 									<table class="table table-hover table-striped">
 										<thead>
 											<th>ID</th>
-											<th>Name</th>
-											<th>Salary</th>
-											<th>Country</th>
-											<th>City</th>
+											<th>Nome Paciente</th>
+											<th>Data da Consulta</th>
+											<th>Nome do Doutor</th>
+											<th>Sala</th>
 										</thead>
-										<tbody>
+										<tbody><% for(int i = 0; i < listaConsulta.size(); i++){
+											%>
 											<tr>
-												<td>1</td>
-												<td>Dakota Rice</td>
-												<td>$36,738</td>
-												<td>Niger</td>
-												<td>Oud-Turnhout</td>
+												<td><%=listaConsulta.get(i).getId()%></td>
+												<td><%=listaConsulta.get(i).getPaciente().getNome()%></td>
+												<td><%=fd.format(listaConsulta.get(i).getData())%></td>
+												<td><%=listaConsulta.get(i).getProfissional().getNome()%></td>
+												<td><%=listaConsulta.get(i).getSala().getTitulo()%></td>
 											</tr>
-											<tr>
-												<td>2</td>
-												<td>Minerva Hooper</td>
-												<td>$23,789</td>
-												<td>Cura√ßao</td>
-												<td>Sinaai-Waas</td>
-											</tr>
-											<tr>
-												<td>3</td>
-												<td>Sage Rodriguez</td>
-												<td>$56,142</td>
-												<td>Netherlands</td>
-												<td>Baileux</td>
-											</tr>
-											<tr>
-												<td>4</td>
-												<td>Philip Chaney</td>
-												<td>$38,735</td>
-												<td>Korea, South</td>
-												<td>Overland Park</td>
-											</tr>
-											<tr>
-												<td>5</td>
-												<td>Doris Greene</td>
-												<td>$63,542</td>
-												<td>Malawi</td>
-												<td>Feldkirchen in K√§rnten</td>
-											</tr>
-											<tr>
-												<td>6</td>
-												<td>Mason Porter</td>
-												<td>$78,615</td>
-												<td>Chile</td>
-												<td>Gloucester</td>
-											</tr>
+											<%} %>
 										</tbody>
 									</table>
 								</div>

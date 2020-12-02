@@ -5,15 +5,31 @@ public class Documento {
 
 	private int id;
 	private Date data;
-	private int idPaciente;
-	private int idProfissional;
+	private Paciente paciente;
+	private Profissional profissional;
 	
-	public Documento(int id, Date data, int idPaciente, int idProfissional) {
+	public Paciente getPaciente() {
+		return paciente;
+	}
+
+	public void setPaciente(Paciente paciente) {
+		this.paciente = paciente;
+	}
+
+	public Profissional getProfissional() {
+		return profissional;
+	}
+
+	public void setProfissional(Profissional profissional) {
+		this.profissional = profissional;
+	}
+
+	public Documento(int id, Date data, Paciente paciente, Profissional profissional) {
 		super();
 		this.id = id;
 		this.data = data;
-		this.idProfissional = idProfissional;
-		this.idPaciente = idPaciente;
+		this.profissional = profissional;
+		this.paciente = paciente;
 	}
 
 	public Documento() {
@@ -36,24 +52,6 @@ public class Documento {
 		this.data = data;
 	}
 
-	public int getIdPaciente() {
-		return idPaciente;
-	}
-
-	public void setIdPaciente(int idPaciente) {
-		this.idPaciente = idPaciente;
-	}
-
-	public int getIdProfissional() {
-		return idProfissional;
-	}
-
-	public void setIdProfissional(int idProfissional) {
-		this.idProfissional = idProfissional;
-	}
-
-	
-	
 	
 }
 
