@@ -17,11 +17,15 @@ construir:
       - sigeh/target/
 
  
-testar:
+testar integrado:
   stage: test
   script:
-    - mvn $MAVEN_CLI_OPTS org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile surefire:test
+    - mvn $MAVEN_CLI_OPTS -Dtest=br.com.sigeh.test.BOIntegrationTest org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile surefire:test 
 
+testar unitario:
+  stage: test
+  script:
+    - mvn $MAVEN_CLI_OPTS -Dtest=br.com.sigeh.test.BOTest org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile surefire:test
 
 implantar:
   stage: deploy
