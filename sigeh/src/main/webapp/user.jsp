@@ -157,34 +157,34 @@
                                         <div class="row">
                                             <div class="col-md-5 pr-1">
                                                 <div class="form-group">
-                                                    <label>Company (disabled)</label>
-                                                    <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc.">
+                                                    <label>Company</label>
+                                                    <input type="text" class="form-control" disabled="" placeholder="Company" value="VASP - Vagabundos Anonimos Sustentados Pelos Pais">
                                                 </div>
                                             </div>
                                             <div class="col-md-3 px-1">
                                                 <div class="form-group">
                                                     <label>Username</label>
-                                                    <input type="text" class="form-control" placeholder="Username" value="michael23">
+                                                    <input type="text" class="form-control" placeholder="Username" value="elliot.castanha">
                                                 </div>
                                             </div>
                                             <div class="col-md-4 pl-1">
                                                 <div class="form-group">
                                                     <label for="exampleInputEmail1">Email address</label>
-                                                    <input type="email" class="form-control" placeholder="Email">
+                                                    <input type="email" class="form-control" placeholder="Email" value="elliotcastanha@mob.com">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 pr-1">
                                                 <div class="form-group">
-                                                    <label>First Name</label>
-                                                    <input type="text" class="form-control" placeholder="Company" value="Mike">
+                                                    <label>Name</label>
+                                                    <input type="text" class="form-control" placeholder="Company" value="Elliot Castanha">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 pl-1">
                                                 <div class="form-group">
-                                                    <label>Last Name</label>
-                                                    <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
+                                                    <label>Cellphone number</label>
+                                                    <input type="text" class="form-control" placeholder="Last Name" value="(71) 9 9999-0000">
                                                 </div>
                                             </div>
                                         </div>
@@ -192,7 +192,7 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label>Address</label>
-                                                    <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                                                    <input type="text" class="form-control" placeholder="Home Address" value="Alameda das Cajazeiras, 8 - Caminho das Arvores">
                                                 </div>
                                             </div>
                                         </div>
@@ -200,19 +200,19 @@
                                             <div class="col-md-4 pr-1">
                                                 <div class="form-group">
                                                     <label>City</label>
-                                                    <input type="text" class="form-control" placeholder="City" value="Mike">
+                                                    <input type="text" class="form-control" placeholder="City" value="Salvador">
                                                 </div>
                                             </div>
                                             <div class="col-md-4 px-1">
                                                 <div class="form-group">
                                                     <label>Country</label>
-                                                    <input type="text" class="form-control" placeholder="Country" value="Andrew">
+                                                    <input type="text" class="form-control" placeholder="Country" value="Brasil">
                                                 </div>
                                             </div>
                                             <div class="col-md-4 pl-1">
                                                 <div class="form-group">
-                                                    <label>Postal Code</label>
-                                                    <input type="number" class="form-control" placeholder="ZIP Code">
+                                                    <label>CPF</label>
+                                                    <input type="text" class="form-control" value="084.074.784-01">
                                                 </div>
                                             </div>
                                         </div>
@@ -220,7 +220,7 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label>About Me</label>
-                                                    <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                                                    <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description" value="Mike">Gênio, bilionário, playboy, filantropo.</textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -238,17 +238,17 @@
                                 <div class="card-body">
                                     <div class="author">
                                         <a href="#">
-                                            <img class="avatar border-gray" src="assets/img/faces/face-3.jpg" alt="...">
-                                            <h5 class="title">Mike Andrew</h5>
+                                            <img class="avatar border-gray" src="assets/img/faces/face-5.jpg" alt="...">
+                                            <h5 class="title">Elliot</h5>
                                         </a>
                                         <p class="description">
-                                            michael24
+                                            elliot.castanha
                                         </p>
                                     </div>
                                     <p class="description text-center">
-                                        "Lamborghini Mercy
-                                        <br> Your chick she so thirsty
-                                        <br> I'm in that two seat Lambo"
+                                        "Skynet não reinará
+                                        <br> ANONYMOUS GROUP
+                                        <br> YOLO"
                                     </p>
                                 </div>
                                 <hr>

@@ -150,19 +150,19 @@
                         <div class="col-md-4">
                             <div class="card ">
                                 <div class="card-header ">
-                                    <h4 class="card-title">Email Statistics</h4>
-                                    <p class="card-category">Last Campaign Performance</p>
+                                    <h4 class="card-title">Porcentagem de Horas Trabalhadas</h4>
+                                    <p class="card-category">Mês de Dezembro</p>
                                 </div>
                                 <div class="card-body ">
                                     <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
                                     <div class="legend">
-                                        <i class="fa fa-circle text-info"></i> Open
-                                        <i class="fa fa-circle text-danger"></i> Bounce
-                                        <i class="fa fa-circle text-warning"></i> Unsubscribe
+                                        <i class="fa fa-circle text-info"></i> Horas trabalhadas
+                                        <i class="fa fa-circle text-danger"></i> Horas restantes
+                                        <i class="fa fa-circle text-warning"></i> Descansos
                                     </div>
                                     <hr>
                                     <div class="stats">
-                                        <i class="fa fa-clock-o"></i> Campaign sent 2 days ago
+                                        <i class="fa fa-clock-o"></i> Ultima atualização 4 horas atrás.
                                     </div>
                                 </div>
                             </div>
@@ -171,7 +171,7 @@
                             <div class="card ">
                                 <div class="card-header ">
                                     <h4 class="card-title">Users Behavior</h4>
-                                    <p class="card-category">24 Hours performance</p>
+                                    <p class="card-category"></p>
                                 </div>
                                 <div class="card-body ">
                                     <div id="chartHours" class="ct-chart"></div>
