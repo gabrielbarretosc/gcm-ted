@@ -31,9 +31,17 @@
 		</dependency>
 
 	</dependencies>
+	
+	<distributionManagement>
+		<repository>
+			<id>ftp-server</id>
+			<url>ftp://${env.DRIVEHQ_USERNAME}:${env.DRIVEHQ_PASSWORD}@ftp.drivehq.com</url>
+		</repository>
+	</distributionManagement>
+	
 
 	<build>
-		<finalName>br.com.sigeh</finalName>
+		<finalName>SIGEH</finalName>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
 				defaults (may be moved to parent pom) -->
 			<plugins>
