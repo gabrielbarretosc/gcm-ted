@@ -21,3 +21,11 @@ testar:
   stage: test
   script:
     - mvn $MAVEN_CLI_OPTS org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile surefire:test
+
+
+implantar:
+  stage: deploy
+  script:
+    - mvn $MAVEN_CLI_OPTS jar:jar deploy:deploy
+  only:
+    - tags
