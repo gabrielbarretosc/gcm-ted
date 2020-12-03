@@ -1,0 +1,14 @@
+image: maven:latest
+
+variables:
+  MAVEN_CLI_OPTS: "-f ./sigeh"
+
+construir:
+  stage: build
+  script:
+    - mvn $MAVEN_CLI_OPTS compile
+ 
+testar:
+  stage: test
+  script:
+    - mvn $MAVEN_CLI_OPTS test
